@@ -1,0 +1,12 @@
+.another {
+  background: #0a0a0a;
+}
+.another__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.another__item {
+  width: calc(33.3% - 110px);
+  margin-top: 100px;
+}

@@ -1,22 +1,129 @@
+:root {
+  --primary-color: #ff4116;
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 p {
-    margin: 0;
+  margin: 0;
 }
 a {
-    text-decoration: none;
-    color: unset;
+  text-decoration: none;
+  color: unset;
 }
 img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 .container {
-    /* max-width: 1720px;
-    margin: 0 auto; */
+  padding: 0 100px;
+}
 
-    padding: 0 100px;
+/* header */
+
+.header {
+  background: #f1f1f1;
+}
+.header__wrap {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  justify-content: space-between;
+  background: #f1f1f1;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.header__brand {
+  color: #0a0a0a;
+}
+.header__bars {
+  cursor: pointer;
+  display: none;
+}
+.header__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  animation: fadeOut 0.3s;
+}
+.header__nav {
+  display: flex;
+  animation: fadeOut 0.3s;
+  user-select: none;
+}
+.header__nav.show {
+  display: flex;
+}
+.header__overlay.show {
+  display: block;
+}
+
+.header__item {
+  color: #b0b0b0;
+  transition: color 0.3s;
+}
+.header__item:hover {
+  color: var(--primary-color);
+}
+.header__item.active {
+  color: var(--primary-color);
+}
+.header__item ~ .header__item {
+  margin-left: 22px;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+/* tablet */
+@media screen and (max-width: 1200px) {
+  .header__wrap {
+    height: 45px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    position: relative;
+  }
+  .header__nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    display: none;
+  }
+  .header__bars {
+    display: block;
+  }
+  .header__item {
+    margin: 12px 0;
+    text-align: center;
+    width: 100%;
+  }
+  .header__item ~ .header__item {
+    margin-left: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
