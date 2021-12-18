@@ -82,6 +82,9 @@
   .portfolio__project__desc__item {
     width: 100%;
   }
+  .portfolio__project__detail {
+    margin-top: -30px;
+  }
 }
 /* @media screen and (max-width: 1300px) {
   .header__wrap {

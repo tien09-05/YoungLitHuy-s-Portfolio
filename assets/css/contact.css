@@ -25,7 +25,6 @@
 .contact__btn {
   padding: 10px 80px;
   width: 300px;
-  text-align: center;
   border: 1px solid var(--primary-color);
   position: relative;
 
@@ -42,8 +41,8 @@
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
-  width: 25px;
   cursor: pointer;
+  font-size: 25.4px;
 }
 .contact__btn span {
 }
