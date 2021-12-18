@@ -44,7 +44,9 @@
 .body__main__row__item__desc p {
   margin-bottom: 10px;
 }
-
+.languages {
+  margin-top: 100px;
+}
 /* mobile */
 @media screen and (max-width: 600px) {
   .body__hello {
