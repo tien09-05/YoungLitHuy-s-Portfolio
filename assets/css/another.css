@@ -5,8 +5,27 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 100px;
 }
-.another__item {
-  width: calc(33.3% - 110px);
-  margin-top: 100px;
+.another__col {
+  height: 100%;
+  width: calc(33% - 55px);
+}
+.another__col img {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .another__list {
+    padding-top: 20px;
+  }
+  .another__col {
+    width: calc(50% - 10px);
+  }
+  .another__col img {
+    margin-bottom: 20px;
+  }
 }

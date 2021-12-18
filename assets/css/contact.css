@@ -1,0 +1,77 @@
+.contact {
+  background: #0a0a0a;
+  padding-bottom: 194px;
+}
+
+.contact__main {
+  color: #fff;
+}
+.contact__title {
+  margin-top: 100px;
+  margin-bottom: 200px;
+
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115px;
+  letter-spacing: 0em;
+}
+.contact__btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact__btn {
+  padding: 10px 80px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid var(--primary-color);
+  position: relative;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+
+  cursor: pointer;
+}
+.contact__btn i {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 25px;
+  cursor: pointer;
+}
+.contact__btn span {
+}
+.contact__btn ~ .contact__btn {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact__title {
+    margin-top: 30px;
+
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+  }
+
+  .contact__btn {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+
+    background-color: var(--primary-color);
+  }
+  .contact__btn i {
+    color: #fff;
+  }
+}
