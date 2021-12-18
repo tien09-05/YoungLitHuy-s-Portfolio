@@ -1,3 +1,57 @@
+@font-face {
+  font-family: "SFProText";
+  src: url("../fonts/SFProText-Bold.woff2") format("woff2"),
+    url("../fonts/SFProText-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("../fonts/SFProText-Light.woff2") format("woff2"),
+    url("../fonts/SFProText-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("../fonts/SFProText-Medium.woff2") format("woff2"),
+    url("../fonts/SFProText-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("../fonts/SFProText-Regular.woff2") format("woff2"),
+    url("../fonts/SFProText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("../fonts/SFProText-Semibold.woff2") format("woff2"),
+    url("../fonts/SFProText-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("../fonts/SFProText-Thin.woff2") format("woff2"),
+    url("../fonts/SFProText-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --primary-color: #ff4116;
 }
@@ -6,6 +60,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: "SFProText", sans-serif;
 }
 p {
   margin: 0;
