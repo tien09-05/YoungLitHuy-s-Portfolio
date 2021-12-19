@@ -85,6 +85,7 @@ img {
   background: #f1f1f1;
   position: fixed;
   width: 100%;
+  top: 0;
 }
 .header__wrap {
   display: flex;
@@ -137,7 +138,7 @@ img {
   color: var(--primary-color);
 }
 .header__item ~ .header__item {
-  margin-left: 22px;
+  margin-left: 30px;
 }
 
 /* mobile */
@@ -174,6 +175,7 @@ img {
     margin: 12px 0;
     text-align: center;
     width: 100%;
+    font-weight: bold;
   }
   .header__item ~ .header__item {
     margin-left: 0;
