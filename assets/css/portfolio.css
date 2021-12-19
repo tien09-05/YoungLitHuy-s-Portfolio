@@ -63,8 +63,14 @@
 }
 
 @media screen and (max-width: 500px) {
+  .portfolio__main {
+    padding-top: 75px;
+  }
   .portfolio__project {
     flex-direction: column;
+  }
+  .portfolio__project:first-child {
+    margin-top: 0;
   }
   .portfolio__project__img {
     width: 100%;

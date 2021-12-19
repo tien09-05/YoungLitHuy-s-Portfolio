@@ -57,6 +57,7 @@
 @media screen and (max-width: 600px) {
   .body__hello {
     margin-bottom: 30px;
+    padding-top: 75px;
   }
   .body__main__row {
     flex-direction: column;

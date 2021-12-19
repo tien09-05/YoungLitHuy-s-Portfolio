@@ -20,7 +20,7 @@
     display: none;
   }
   .another__list {
-    padding-top: 20px;
+    padding-top: 75px;
   }
   .another__col {
     width: calc(50% - 10px);
