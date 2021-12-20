@@ -33,8 +33,12 @@
   font-weight: 500;
   line-height: 38px;
   letter-spacing: 0em;
-
+  transition: all 0.3s;
   cursor: pointer;
+}
+.contact__btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 .contact__btn i {
   position: absolute;

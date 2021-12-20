@@ -33,6 +33,11 @@
   border: 1px solid var(--primary-color);
   display: block;
   min-width: 185px;
+  transition: all 0.3s;
+}
+.portfolio__project__header__btn:hover a {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 .portfolio__project__member h3 {
   font-size: 24px;
